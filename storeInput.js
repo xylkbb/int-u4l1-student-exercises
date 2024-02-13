@@ -1,11 +1,18 @@
 let button = document.querySelector("button");
 
 button.addEventListener("click", function() {
-    let text = document.querySelector('.text').value;
+    let text;
+    let number;
+    let email;
+    let date;
     
-    // 1. Save the value of the remaining three inputs in three separate variables.
-    //  - Use the text variable as a guide.
-    //  - You should have a variable for the number, email, and date.
+    // 1. Update the four variables - text, number, email, and date.
+    //  - Save the value of the four different inputs.
+    //  - Go to the html to use the class names.
+    
+
+    
+    
     
 
 
@@ -13,14 +20,8 @@ button.addEventListener("click", function() {
     let resultsDiv = document.querySelector('#results');
     resultsDiv.innerHTML = "";
     resultsDiv.innerHTML += `<p>Text: ${text}</p>`;
-    
-    
-    // 2. Update the results div innerhtml to the remaining three inputs.
-    //  - Use the line of code above as a guide.
-    //  - Take note that string interpolation is used.
-    //  - Use the " += " assignment.
-    //. - The " += " lets you add to what's already there - similar to appending.
-    
-
+    resultsDiv.innerHTML += `<p>Number: ${number}</p>`;
+    resultsDiv.innerHTML += `<p>Email: ${email}</p>`;
+    resultsDiv.innerHTML += `<p>Date: ${date}</p>`;
 
 });
